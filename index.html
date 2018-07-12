@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- bootstrap.css -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>java script</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+  <h1><a href="./index.html">Home</a></h1>
+<!--  script for changing the time-->
+   <h1>date and time will show here</h1>
+   <h1 id="showTime"></h1>
+   <button type="button" onclick="changeTheTime()">show Date Time</button>
+<hr> 
+<hr>
+  <h1 id="hello">This will change</h1>
+   <button type="button" onclick="myTextChange()">Click here to change</button>
+   
+<hr> 
+<hr>
+   <h1>Java script can change image</h1>
+    
+    <button type="button" onclick="myJersy1()">jersy 1</button>
+    <img id="myImage" src="img/4.jpg" alt="jersy 3">
+    <button type="button" onclick="myJersy2()">jersy 2</button>
+   <button type="button" onclick="displayBlock()">Display Block</button>
+   <button type="button" onclick="displayHide1()">hide img</button>
+  <hr>
+  <hr>
+
+    <h1 id="fontSize1">Change the font size with java </h1>
+    <button type="button" onclick="myFontSize()">font size change</button>
+
+    <hr>
+    <hr>
+    <br>
+    <h1 id="hideElement1"> java script can hide an element</h1>
+    <button type="button" onclick="myHideElement()">java script can hide an element</button>
+    <button type="button" onclick="backMyElement1()">java can back an element</button>
+    
+
+<h1 id="myPar">I am a heading.</h1>
+<div id="myDiv">I am a div.</div>
+
+<p>
+<button type="button" onclick="myCodeBlock()">Try it</button>
+</p>
+
+<p>var price1 = 5;
+var price2 = 6;
+var total = price1 + price2;
+document.getElementById("demo").innerHTML =
+"মোট: " + total;</p>
+
+<h1 id="demo123"></h1>
+
+
+<p>var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo").innerHTML = z;</p>
+  <h1 id="demo"></h1>
+  <p>Number can be written with or without decimals.</p>
+<h1 id="demo1"></h1>
+<p>Strings are text, written within double or single quotes:</p>
+<h1 id="demo2"></h1>
+
+<p>var x = 5;
+var y = 6;
+document.getElementById("demo").innerHTML = x + y;</p>
+<h1 id="demo3"></h1>
+
+<p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+<h1 id="demo4"></h1>
+<p>var x = 5 + 6;
+var y = x * 10;
+document.getElementById("demo").innerHTML = y;</p>
+<h1 id="demo5"></h1>
+
+ 
+  <button type="button" onclick="myFunction()">Button1</button>
+  
+  <p id="para1"></p>
+
+<pre>
+var x = 5;
+var y = 2;
+var z = x - y;
+document.getElementById("demo").innerHTML = z
+</pre>
+<p id="demo8"></p>
+
+<pre>
+  var x = 5;
+var y = 2;
+var z = x * y;
+document.getElementById("demo").innerHTML = z;
+</pre>
+<p id="demo9"></p>
+
+<pre>var x = 16 + "Volvo";
+document.getElementById("demo").innerHTML = x;</pre>
+<p id="demo10"></p>
+<!-- script  -->
+   <script>
+       
+   function changeTheTime(){
+    document.getElementById("showTime").innerHTML = Date();
+   }
+
+
+   function myTextChange(){
+      document.getElementById("hello").innerHTML="hellow world :p";  
+       }
+
+   function myJersy1(){
+      document.getElementById("myImage").src="./img/1.jpg";
+       } 
+
+   function myJersy2(){
+
+      document.getElementById("myImage").src="./img/2.jpg";
+       }
+
+    function displayBlock(){
+      document.getElementById("myImage").style.display="block";
+    }
+
+    function displayHide1(){
+      document.getElementById("myImage").style.display="none";
+   }
+    
+
+   function myFontSize(){
+      document.getElementById("fontSize1").style.fontSize="80px";
+   }
+
+   function myHideElement(){
+      document.getElementById("hideElement1").style.display="none";
+   }
+
+   function backMyElement1(){
+      document.getElementById("hideElement1").style.display="block";
+    }
+       function myCodeBlock() {
+    document.getElementById("myPar").innerHTML = "Hello Heading.";
+    document.getElementById("myDiv").innerHTML = "How are you?";
+}
+       
+       var price1 = 5;
+var price2 = 6;
+var total = price1 + price2;
+document.getElementById("demo123").innerHTML =
+"মোট: " + total;
+       
+        var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo").innerHTML = z;
+    
+    document.getElementById("demo1").innerHTML = 10.50;
+    
+    document.getElementById("demo2").innerHTML ="Johnny";
+    
+    var x = 5;
+var y = 6;
+document.getElementById("demo3").innerHTML = x + y;
+    
+    document.getElementById("demo4").innerHTML = (5 + 6) * 10;
+    var x = 5 + 6;
+var y = x * 10;
+document.getElementById("demo5").innerHTML = y;
+       
+       function myFunction(){
+    document.write('আমার প্রথম জাভাস্ক্রিপ্ট!')
+}
+window.alert("This is an alert box");
+    
+document.write(5 + 6);
+    
+document.getElementById("para1").innerHTML = "this a text";
+    
+    console.log("press F12 then select console/johnny");
+
+var x = 5;
+var y = 2;
+var z = x - y;
+document.getElementById("demo8").innerHTML = z;
+    
+    var x = 5;
+var y = 2;
+var z = x * y;
+document.getElementById("demo9").innerHTML = z;
+
+var x = 16 + "Volvo";
+document.getElementById("demo10").innerHTML = x;
+  </script>
+<!--   end-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+   <!-- offline script  -->
+<!--     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>  -->
+  </body>
+</html>
